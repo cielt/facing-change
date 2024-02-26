@@ -1,30 +1,231 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/ppm.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TODO: icons, manifest -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="/public/css/normalize.css" rel="stylesheet" />
-    <link href="/public/css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/css/normalize.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/photo-book.css" rel="stylesheet" />
     <title>Facing Change | A Photo Essay by Elias Bukai-Leite</title>
   </head>
   <body class="photo-book ppm-photo-book">
     <div id="page" class="page">
       <div class="scaffold-outer p-rel">
-        <a href="#" target="_blank">
-          <img src="/public/ppm.svg" class="logo" alt="Parts Per Million logo" />
-        </a>
-        <h1>Parts Per Million</h1>
-        <div class="card">
-          <button id="counter" type="button"></button>
+        <div class="site-nav-block">
+          <div class="site-nav-wrapper">
+            <button
+              type="button"
+              id="close-menu-btn"
+              class="close-menu-btn"
+              aria-label="close menu"
+            >
+              <b class="ico" aria-hidden="true">×</b>
+              <span class="vis-hidden">Close Menu</span>
+            </button>
+            <nav id="site-navigation" class="global-nav">
+              <ul id="primary-menu" class="site-nav-menu">
+                <li id="link-about" class="menu-item">
+                  <a href="#">About this project</a>
+                </li>
+                <li id="ppm-home-link" class="menu-item external">
+                  <a
+                    href="https://ppm.350brooklyn.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >PPM Home</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <p class="read-the-docs">
-          Start! Brrraaaooowww!!! 🐈‍⬛🐈
-        </p>
+        <div class="scaffold-inner">
+          <div class="menu-overlay"></div>
+          <div class="header-bar">
+            <div class="header-bar-context">
+              <div class="overlay"></div>
+              <div class="bar-content">
+                <a
+                  class="logo home-link"
+                  href="https://ppm.350brooklyn.org/"
+                  rel="home"
+                >
+                  <span class="ico ico-ppm"></span>
+                  <b class="xs--ppm-hide home-label">Facing Change</b>
+                </a>
+                <div class="header-bar-block">
+                  <button type="button" id="global-menu-btn" class="menu-btn">
+                    <span class="ico-menu" aria-hidden="true"></span>
+                    <b class="menu-label">Menu</b>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="main" class="main">
+            <main id="primary" class="site-main">
+              <div id="primary-content" class="page-content-area">
+                <div class="photo-book has-post-thumbnail">
+                  <div class="entry-header-wrapper has-hero-image">
+                    <header class="entry-header">
+                      <span class="single-post-med">photo book</span>
+                      <h1 class="entry-title">Facing Change</h1>
+                    </header>
+                    <!-- .entry-header -->
+                    <div class="featured-image-frame">
+                      <img
+                        width=""
+                        height=""
+                        src="/book/book-climate-clock-beginning.jpg"
+                        class="fit wp-post-image"
+                        alt=""
+                        title="Featured image"
+                        decoding="async"
+                        fetchpriority="high"
+                      />
+                    </div>
+                    <!-- /.featured-image-frame -->
+                  </div>
+                  <div id="story-content" class="entry-content">
+                    <div class="post-layout-main">
+                      <div class="post-body pages-track">
+                        <!-- TODO: book-page elements -->
+                        <div
+                          class="book-page theme-dark forward page-content-scrolling-down"
+                        >
+                          <div class="page-bg">
+                            <div class="page-heading">
+                              <h2 class="heading-main">Forward</h2>
+                            </div>
+                          </div>
+                          <div class="page-content">
+                            <div class="pt-6 pb-6 px-4">
+                              <div class="w-max max-640">
+                                <p class="first-paragraph ts-l">
+                                  This collection is a wake up call for
+                                  everyone. The climate crisis worsens each day
+                                  pollution increases, and while action is being
+                                  taken there is still much work to be done.
+                                  Pasted on the cover is a clock. That
+                                  clock—located in Union Square, New York
+                                  City—counts down to a grim milestone. A total
+                                  warming of 1.5 degrees celsius, the original
+                                  annual average temperature rise ceiling set by
+                                  the global community. 1.5 degrees of warming
+                                  was nearly unimaginable almost a century ago
+                                  yet today we inch closer and closer towards
+                                  reaching it.
+                                </p>
+                                <p>
+                                  Through this collection, it is my aim to
+                                  spread awareness for the effects of climate
+                                  change and pollution apparent all around us,
+                                  to shed light on these things we don&rsquo;t
+                                  often notice. In this book, you will find a
+                                  showcase of photos all based in New York City,
+                                  centered around climate change, pollution, and
+                                  finally, the wide variety of resiliency
+                                  projects currently being undertaken by the
+                                  local NYC population as well as the
+                                  City&rsquo;s governing body. Each page focuses
+                                  on a different location in NYC.
+                                </p>
+                                <p>
+                                  It is my hope that this collection will evoke
+                                  a sense of urgency to act within you.
+                                  Hopefully, one day, we can come together as a
+                                  society, fully educated and ready to act, in
+                                  order to fight the different crises facing our
+                                  civilization.
+                                </p>
+
+                                <p class="t-alignR">— Elias Bukai-Leite</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" target="_blank">
+                      <img
+                        src="/ppm.svg"
+                        class="logo"
+                        alt="Parts Per Million logo"
+                      />
+                    </a>
+                    <!-- TODO: .post-content-footer -->
+                  </div>
+                </div>
+              </div>
+            </main>
+            <div class="footer">
+              <div class="footer-content">
+                <div class="w-max max-gl">
+                  <div class="footer-content-inner">
+                    <div class="site-info">
+                      <h5 class="logo-350bk mb-1">
+                        <a
+                          href="https://350brooklyn.org/"
+                          title="Visit the 350Brooklyn website"
+                        >
+                          <span class="vis-hidden">350Brooklyn</span>
+                        </a>
+                      </h5>
+                      <p class="ts-s mb-5">
+                        350Brooklyn works locally to address the climate crisis
+                        through education, legislation and direct action. We are
+                        one of more than 200 international affiliates of
+                        <a href="https://350.org/">350.org</a>
+                      </p>
+                      <div class="copyright">
+                        <p class="ts-s tf-sans">
+                          © 2024 Parts Per Million, a project by
+                          <a href="https://350brooklyn.org/">350Brooklyn</a>
+                        </p>
+                      </div>
+                      <!-- /.copyright -->
+                    </div>
+                    <div class="site-links">
+                      <div class="links-col ppm-links">
+                        <h5 class="h5 tf-sans">Parts Per Million</h5>
+                        <nav id="footer-navigation" class="footer-nav">
+                          <ul
+                            id="footer-ppm-menu"
+                            class="footer-ppm-menu footer-menu"
+                          >
+                            <li class="menu-item footer-menu-item">
+                              <a href="#">About This Project</a>
+                            </li>
+                            <li class="menu-item footer-menu-item">
+                              <a href="https://ppm.350brooklyn.org/"
+                                >PPM Home&nbsp;
+                              </a>
+                            </li>
+                            <li class="menu-item footer-menu-item">
+                              <a href="https://350brooklyn.org/"
+                                >350Brooklyn Home&nbsp;</a
+                              >
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.footer-content-inner -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.scaffold-inner -->
       </div>
     </div>
     <script type="module" src="/main.js"></script>

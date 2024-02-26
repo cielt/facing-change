@@ -1,0 +1,132 @@
+/* Photo Book styles */
+
+.entry-header-wrapper {
+  height: 60vh;
+  display: block;
+  position: relative;
+  background-color: var(--darkGrey350);
+}
+
+.entry-header,
+.featured-image-frame {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.featured-image-frame {
+  display: block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.featured-image-frame img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.entry-header {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  padding: var(--b-space-4);
+  background-color: var(--blackTransparent);
+}
+
+.single-post-med {
+  display: block;
+  color: var(--teal350);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--b-space-2);
+}
+
+.entry-title {
+  font-size: var(--b-fontSize-h2);
+  margin-bottom: 0;
+}
+
+.subheading {
+  display: block;
+  padding: 0 var(--b-space-4);
+  line-height: var(--b-lineHeight-header);
+  margin-top: var(--b-space-2);
+  font-family: var(--b-fontFamily);
+  font-style: italic;
+  color: var(--grey3);
+}
+
+.subheading::before {
+  content: '–';
+  display: inline-block;
+  margin-right: var(--b-space-1);
+}
+
+.cover-caption-block {
+  position: absolute;
+  z-index: 3;
+  top: 100%;
+  right: 0;
+  margin-top: var(--b-space-2);
+  margin-right: var(--b-space-4);
+}
+
+.cover-image-caption {
+  font-size: var(--b-fontSize-s);
+  font-family: var(--b-sans-fontFamily);
+  text-align: right;
+  color: var(--darkGold);
+}
+
+.cover-image-caption a:link,
+.cover-image-caption a:active,
+.cover-image-caption a:visited {
+  color: var(--darkGold);
+}
+
+@media (min-width: 960px) {
+  .entry-header-wrapper {
+    height: 100vh;
+    display: flex;
+  }
+
+  /* No hero image */
+  .entry-header {
+    flex: 1;
+    padding: var(--b-space-5);
+    background-color: var(--clear);
+  }
+
+  .entry-title {
+    font-size: var(--b-fontSize-h1);
+  }
+
+  .subheading {
+    font-size: var(--b-fontSize-h4);
+  }
+
+  /* has hero image */
+  .entry-header-wrapper.has-hero-image .entry-header,
+  .entry-header-wrapper.has-hero-image .featured-image-frame {
+    top: inherit;
+    left: inherit;
+    width: auto;
+  }
+
+  .entry-header-wrapper.has-hero-image .featured-image-frame {
+    flex: 1 1 50%;
+  }
+
+  .entry-header-wrapper.has-hero-image .entry-header {
+    position: relative;
+    flex-basis: 50%;
+  }
+}
