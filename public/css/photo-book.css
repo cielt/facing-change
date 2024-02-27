@@ -130,3 +130,359 @@
     flex-basis: 50%;
   }
 }
+
+/* Photo Book author info */
+
+.meta-section {
+  line-height: var(--b-lineHeight-header);
+}
+
+.meta-section:not(:last-of-type) {
+  padding-bottom: var(--b-space-4);
+  margin-bottom: var(--b-space-4);
+  border-bottom: 1px solid var(--lightGrey350);
+}
+
+.post-date .post-meta {
+  display: block;
+  font-family: var(--b-mono-fontFamily);
+}
+
+.post-date .post-meta:not(:last-of-type) {
+  padding-bottom: var(--b-space-3);
+  margin-bottom: var(--b-space-3);
+  border-bottom: 1px dotted var(--lightGrey350);
+}
+
+.contributor-block .contributor-byline {
+  display: flex;
+  align-items: center;
+  gap: var(--b-space-2);
+  margin-bottom: var(--b-space-2);
+}
+
+.contributor-block .contributor-byline .contributor-thumbnail {
+  flex: 0 0 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  background-color: var(--grey1);
+}
+
+.contributor-block .contributor-byline .contributor-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contributor-block .contributor-byline .contributor-name {
+  flex: 1 0 auto;
+  font-size: var(--b-fontSize-l);
+}
+
+.contributor-bio {
+  font-size: var(--b-fontSize-s);
+  font-family: var(--b-sans-fontFamily);
+  line-height: var(--b-lineHeight);
+  color: var(--grey5);
+}
+
+.contributor-bio a {
+  color: var(--blue350);
+}
+
+.sxs {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sxs > * {
+  flex: 0 0 auto;
+}
+
+.sxs .author-photo {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.sxs .author-bio {
+  padding: var(--b-space-5);
+}
+
+.sxs .author-bio .text-col {
+  max-width: 30em;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 960px) {
+  .sxs {
+    flex-direction: row;
+  }
+
+  .sxs > * {
+    flex: 1 1 50%;
+  }
+
+  .sxs .author-bio {
+    padding: var(--b-space-6);
+  }
+
+  .sxs .author-bio .text-col {
+    margin: 0;
+  }
+}
+
+/* ----- POST CONTENT ----- */
+
+.pages-track .book-page {
+  position: relative;
+}
+
+.pages-track .book-page .page-bg {
+  height: 100vh;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-page .page-heading {
+  text-align: center;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.book-page .page-heading .heading-main {
+  font-size: var(--b-fontSize-xxl);
+  font-family: var(--b-serif-fontFamily);
+  margin-bottom: 0;
+}
+
+.book-page .page-heading .photo-meta {
+  display: block;
+  font-size: var(--b-fontSize);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: var(--b-lineHeight-header);
+}
+
+.book-page .page-heading .heading-main + .photo-meta {
+  margin-top: var(--b-space-3);
+}
+
+@media (min-width: 960px) {
+  .book-page .page-heading .heading-main {
+    font-size: var(--b-fontSize-hxl);
+  }
+
+  .book-page .page-heading .photo-meta {
+    font-size: var(--b-fontSize-l);
+  }
+}
+
+/* Dark */
+
+.book-page.theme-dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.book-page.theme-dark.page-bg {
+  background-color: var(--black);
+}
+
+/* Green */
+
+.book-page.theme-green {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.book-page.theme-green.page-bg {
+  background-color: var(--green);
+}
+
+/* ensure text has bag overlay to improve readability */
+.book-page.bg-image-page .page-heading,
+.book-page.bg-image-page p {
+  padding: var(--b-space-2);
+  border-radius: var(--b-borderRad-2);
+  background: var(--overlayBgBlack);
+}
+
+.book-page.theme-green .page-heading,
+.book-page.theme-green p {
+  background: var(--overlayBgGreen);
+}
+
+.book-page.flex-page .page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-bg.has-image .bg-image-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-bg.has-image .bg-image-screen img {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.page-bg.has-image .bg-image-screen.fit-portrait img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+}
+
+.book-page .page-heading {
+  position: relative;
+  z-index: 2;
+  margin: 0 var(--b-space-2);
+}
+
+.book-page .page-content {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+}
+
+.book-page .page-content.flex-height {
+  min-height: 0;
+}
+
+.book-page .page-content .content-heading {
+  font-size: var(--b-fontSize-xxl);
+  font-family: var(--b-serif-fontFamily);
+  text-align: center;
+}
+
+.first-paragraph .ts-l {
+  font-size: 1em;
+}
+
+.first-paragraph::first-letter {
+  color: var(--white);
+  float: left;
+  font-size: 3.6em;
+  font-family: var(--b-fontFamily);
+  line-height: 0.64;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 960px) {
+  .book-page .page-content .content-heading {
+    font-size: var(--b-fontSize-h1);
+  }
+
+  .first-paragraph .ts-l {
+    font-size: 1.1em;
+  }
+
+  .first-paragraph::first-letter {
+    font-size: 5em;
+  }
+}
+
+/* Waypoints FX */
+
+.book-page.page-content-scrolling-down .page-bg .page-heading {
+  opacity: 0;
+}
+
+.page-subheading {
+  font-size: var(--b-fontSize-h2);
+  color: var(--gold1);
+  text-transform: uppercase;
+  margin-bottom: var(--b-space-2);
+}
+
+.theme-green .page-subheading {
+  color: var(--white);
+}
+
+.theme-green a {
+  color: var(--yellowGreen);
+}
+
+/* Post Navigation Area */
+.countdown-block {
+  font-family: var(--b-sans-fontFamily);
+  font-size: var(--b-fontSize-h1);
+  color: var(--white);
+}
+
+.orgs-list {
+  width: 100%;
+}
+
+.org-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--b-space-2);
+  margin: 0 0 var(--b-space-5);
+  font-size: var(--b-fontSize-l);
+  align-items: flex-start;
+  line-height: var(--b-lineHeight-header);
+}
+
+.org-item a {
+  color: var(--yellowGreen);
+}
+
+.org-item dt {
+  margin: 0;
+  font-weight: bold;
+  flex: 1;
+}
+
+.org-item dd {
+  margin: 0;
+  flex: 1;
+}
+
+@media (min-width: 960px) {
+  .org-item {
+    flex-direction: row;
+    gap: var(--b-space-4);
+  }
+
+  .org-item dt {
+    flex: 0 0 10em;
+  }
+
+  .org-item dd {
+    flex: 1 1 auto;
+  }
+}
+
+.photo-book .post-content-footer {
+  border-top: 1px solid var(--lightGrey350);
+}
+
+.photo-book .post-content-footer .link-subtle {
+  color: var(--darkGold);
+}

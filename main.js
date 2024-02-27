@@ -1,3 +1,5 @@
+import 'waypoints/lib/noframework.waypoints.min';
+
 // Facing Change JS
 
 const $globalMenuBtns = document.querySelectorAll(
@@ -5,9 +7,6 @@ const $globalMenuBtns = document.querySelectorAll(
 );
 
 const $siteNavBlock = document.querySelector('.site-nav-block');
-
-console.log($globalMenuBtns);
-console.log($siteNavBlock);
 
 if ($globalMenuBtns.length) {
   $globalMenuBtns.forEach(($btn) => {
@@ -18,4 +17,26 @@ if ($globalMenuBtns.length) {
       $siteNavBlock.scrollTop(0);
     });
   });
+}
+
+// waypoints
+if (document.body.classList.contains('ppm-photo-book')) {
+  console.log('activate waypoints');
+
+  const $bookPages = document.querySelectorAll('.book-page');
+  if ($bookPages.length) {
+    $bookPages.forEach(($page) => {
+      new Waypoint({
+        element: $page.querySelector('.page-content'),
+        handler(direction) {
+          if (direction && direction === 'down') {
+            $page.classList.add('page-content-scrolling-down');
+          } else {
+            $page.classList.remove('page-content-scrolling-down');
+          }
+        },
+        offset: '75%',
+      });
+    });
+  }
 }
