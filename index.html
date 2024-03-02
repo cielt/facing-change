@@ -32,15 +32,20 @@
             </button>
             <nav id="site-navigation" class="global-nav">
               <ul id="primary-menu" class="site-nav-menu">
-                <li id="link-about" class="menu-item">
-                  <a href="#">About this project</a>
+                <li id="ppm-home-link" class="menu-item external">
+                  <a
+                    href="https://350brooklyn.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >350Brooklyn</a
+                  >
                 </li>
                 <li id="ppm-home-link" class="menu-item external">
                   <a
                     href="https://ppm.350brooklyn.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >PPM Home</a
+                    >Parts Per Million</a
                   >
                 </li>
               </ul>
@@ -236,7 +241,7 @@
                               <div class="w-max max-gm">
                                 <!-- countdown goes here -->
                                 <div class="countdown-block">
-                                  <!-- TODO: Climate Clock -->
+                                  <climate-clock />
                                 </div>
                               </div>
                             </div>
@@ -368,7 +373,7 @@
                           </div>
                         </div>
                         <!-- /.book-page -->
-                        <!-- PAGE 7 :: Climate Clock -->
+                        <!-- PAGE 7A :: Climate Clock -->
                         <div
                           class="book-page theme-dark bg-image-page climate-clock"
                         >
@@ -423,6 +428,26 @@
                           </div>
                         </div>
                         <!-- /.book-page -->
+                        <!-- PAGE 7B :: Climate Clock Widget -->
+                        <div class="book-page theme-dark">
+                          <div class="page-bg">
+                            <div class="page-heading">
+                              <h2 class="heading-main c-gold1">
+                                The Clock&rsquo;s Ticking
+                              </h2>
+                            </div>
+                          </div>
+                          <div class="page-content">
+                            <div class="pt-6 pb-6 px-4">
+                              <div class="w-max max-gm">
+                                <!-- countdown goes here -->
+                                <div class="countdown-block">
+                                  <climate-clock />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <!-- PAGE 8 :: Hamilton Asphalt Plant -->
                         <div
                           class="book-page theme-dark bg-image-page hamilton-asphalt-plant"
@@ -634,7 +659,7 @@
                               <div class="w-max max-gm">
                                 <!-- countdown goes here -->
                                 <div class="countdown-block">
-                                  <!-- TODO: Climate Clock -->
+                                  <climate-clock />
                                 </div>
                               </div>
                             </div>
@@ -960,6 +985,8 @@
                         <a
                           href="https://350brooklyn.org/"
                           title="Visit the 350Brooklyn website"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <span class="vis-hidden">350Brooklyn</span>
                         </a>
@@ -973,7 +1000,12 @@
                       <div class="copyright">
                         <p class="ts-s tf-sans">
                           &copy; 2024 Parts Per Million, a project by
-                          <a href="https://350brooklyn.org/">350Brooklyn</a>
+                          <a
+                            href="https://350brooklyn.org/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >350Brooklyn</a
+                          >
                         </p>
                       </div>
                       <!-- /.copyright -->
@@ -989,5 +1021,6 @@
       </div>
     </div>
     <script type="module" src="/main.js"></script>
+    <script src="/lib/widget-v2.js" async></script>
   </body>
 </html>

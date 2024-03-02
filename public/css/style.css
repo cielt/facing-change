@@ -437,6 +437,20 @@ a {
   background-size: contain;
 }
 
+.hairline {
+  display: block;
+  border: 0;
+  height: 0;
+  width: auto;
+  margin: 3rem auto;
+  clear: both;
+  border-bottom: 1px solid var(--darkGoldTransparent);
+}
+
+.hairline.white {
+  border-bottom-color: var(--whiteTransparent);
+}
+
 @media (min-width: 960px) {
   .footer-content .footer-content-inner {
     flex-direction: row;

@@ -16,7 +16,7 @@ if ($globalMenuBtns.length) {
       ev.preventDefault();
       document.body.classList.toggle('nav-open');
       document.body.classList.toggle('nav-closed');
-      $siteNavBlock.scrollTop(0);
+      $siteNavBlock?.scrollTop(0);
     });
   });
 }
