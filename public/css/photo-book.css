@@ -306,7 +306,7 @@
   color: var(--white);
 }
 
-.book-page.theme-green.page-bg {
+.book-page.theme-green .page-bg {
   background-color: var(--green);
 }
 

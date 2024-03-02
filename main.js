@@ -7,6 +7,8 @@ const $globalMenuBtns = document.querySelectorAll(
 );
 
 const $siteNavBlock = document.querySelector('.site-nav-block');
+const $siteNavMenu = document.querySelector('.site-nav-menu');
+const $siteNavLinks = $siteNavMenu.querySelectorAll('.menu-item > a');
 
 if ($globalMenuBtns.length) {
   $globalMenuBtns.forEach(($btn) => {
@@ -19,10 +21,17 @@ if ($globalMenuBtns.length) {
   });
 }
 
+if ($siteNavLinks.length) {
+  $siteNavLinks.forEach(($link) => {
+    $link.addEventListener('click', () => {
+      document.body.classList.remove('nav-open');
+      document.body.classList.add('nav-closed');
+    });
+  });
+}
+
 // waypoints
 if (document.body.classList.contains('ppm-photo-book')) {
-  console.log('activate waypoints');
-
   const $bookPages = document.querySelectorAll('.book-page');
   if ($bookPages.length) {
     $bookPages.forEach(($page) => {

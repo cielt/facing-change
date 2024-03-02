@@ -400,6 +400,53 @@ a {
   color: var(--red350);
 }
 
+/* ----- FOOTER ----- */
+.footer {
+  position: relative;
+  z-index: 2;
+  background: var(--darkGrey350);
+}
+
+.footer-content {
+  color: var(--lightGrey350);
+  padding: var(--b-space-6) var(--b-space-4);
+}
+
+.footer-content a {
+  color: var(--teal350);
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.footer-content a:hover,
+.footer-content a:focus {
+  color: var(--white);
+}
+
+.footer-content .footer-content-inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--b-space-6);
+}
+
+.logo-350bk a {
+  display: inline-block;
+  width: 180px;
+  height: 24px;
+  background: url('/logo-350brooklyn.svg') no-repeat transparent 50%;
+  background-size: contain;
+}
+
+@media (min-width: 960px) {
+  .footer-content .footer-content-inner {
+    flex-direction: row;
+  }
+
+  .footer-content .footer-content-inner .site-info {
+    flex: 0 0 30%;
+  }
+}
+
 /* ----- TOOLS ----- */
 
 .p-rel {
@@ -483,6 +530,10 @@ a {
   text-transform: uppercase;
 }
 
+.tf-sans {
+  font-family: var(--b-sans-fontFamily);
+}
+
 .w-max {
   width: 100%;
   max-width: var(--b-maxWidth);
@@ -507,4 +558,92 @@ a {
 
 .t-alignR {
   text-align: right;
+}
+
+/* Text Color */
+
+.c-gold1 {
+  color: var(--gold1);
+}
+
+/* Font Size */
+
+.ts-xs {
+  font-size: var(--b-fontSize-xs);
+}
+
+.ts-s {
+  font-size: var(--b-fontSize-s);
+}
+
+.ts-base {
+  font-size: var(--b-fontSize);
+}
+
+.ts-l {
+  font-size: var(--b-fontSize-l);
+}
+
+.ts-xl {
+  font-size: var(--b-fontSize-xl);
+}
+
+.ts-xxl {
+  font-size: var(--b-fontSize-xxl);
+}
+
+.ts-xxxl {
+  font-size: var(--b-fontSize-xxxl);
+}
+
+h1,
+.h1 {
+  font-size: var(--b-fontSize-h2);
+}
+
+h2,
+.h2 {
+  font-size: var(--b-fontSize-h3);
+}
+
+h3,
+.h3 {
+  font-size: var(--b-fontSize-h4);
+}
+
+h4,
+.h4 {
+  font-size: var(--b-fontSize-l);
+}
+
+h5,
+.h5 {
+  font-size: var(--b-fontSize);
+}
+
+@media (min-width: 960px) {
+  h1,
+  .h1 {
+    font-size: var(--b-fontSize-h1);
+  }
+
+  h2,
+  .h2 {
+    font-size: var(--b-fontSize-h2);
+  }
+
+  h3,
+  .h3 {
+    font-size: var(--b-fontSize-h3);
+  }
+
+  h4,
+  .h4 {
+    font-size: var(--b-fontSize-h4);
+  }
+
+  h5,
+  .h5 {
+    font-size: var(--b-fontSize-l);
+  }
 }
