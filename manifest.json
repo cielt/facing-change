@@ -1,0 +1,30 @@
+{
+  "short_name": "Facing Change",
+  "name": "Facing Change: A Photo Book by Elias Bukai-Leite",
+  "icons": [
+    {
+      "src": "/ppm.svg",
+      "type": "image/svg+xml",
+      "sizes": "64x64"
+    },
+    {
+      "src": "/icon-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "background_color": "#17292E",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#17292E",
+  "shortcuts": [],
+  "description": "A Photo Book by Elias Bukai-Leite",
+  "screenshots": []
+}
