@@ -1,4 +1,4 @@
-# Facing Change :hourglass_not_done:
+# Facing Change ⏳🌍🗽
 
 Facing Change is a photo book calling attention to climate change and solutions in NYC. This is a standalone instance of the piece published on 350Brooklyn's [Parts Per Million](https://ppm.350brooklyn.org/photo-books/facing-change/). It is bootstrapped with the [Vite](https://vitejs.dev/) vanilla project template and features the [Climate Clock widget](https://github.com/climateclock/climate-clock-widget).
 
@@ -49,4 +49,4 @@ You can preview the build locally by running
 npm run preview
 ```
 
-5. Deploy your site (detailed info on options from [Vite](https://vitejs.dev/guide/static-deploy.html)) :party_popper:
+5. Deploy your site (detailed info on options from [Vite](https://vitejs.dev/guide/static-deploy.html)) 🎉
