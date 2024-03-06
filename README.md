@@ -1,13 +1,12 @@
 # Facing Change ⏳🌍🗽
 
-Facing Change is a photo book calling attention to climate change and solutions in NYC. This is a standalone instance of the piece published on 350Brooklyn's [Parts Per Million](https://ppm.350brooklyn.org/photo-books/facing-change/). It is bootstrapped with the [Vite](https://vitejs.dev/) vanilla project template and features the [Climate Clock widget](https://github.com/climateclock/climate-clock-widget).
+Facing Change is a photo book calling attention to climate change and solutions in NYC. This is a standalone instance of the piece published on 350Brooklyn's [Parts Per Million](https://ppm.350brooklyn.org/photo-books/facing-change/). It is bootstrapped with [Vite's](https://vitejs.dev/) vanilla project template and features the [Climate Clock widget](https://github.com/climateclock/climate-clock-widget).
 
 ## Getting Started
 
 ### You&rsquo;ll need
 
-- Node.js runtime - [More about Node here](https://nodejs.org/en)
-  - [**npm**](<(https://www.npmjs.com/)>) package manager (comes bundled with Node.js) or
+- [Node.js](https://nodejs.org/en) runtime and [npm](<(https://www.npmjs.com/)>) package manager (comes bundled with Node.js) or alternative
 - [Git](https://git-scm.com/downloads) version control utility
 - Terminal
 - Text editor
